@@ -1,0 +1,22 @@
+<app-navbar></app-navbar>
+<button class="btn btn-outline-secondary image-details-back" (click)="navigateTo('/gallery')">
+  <span class="material-icons">keyboard_backspace</span> Back to gallery
+</button>
+<div class="image-details-content--container">
+  <div class="image-edit-item">
+    <a target="_blank" href="{{image?.url}}">
+      <img class="image-details-image-item" src="{{image?.url}}" alt="">
+    </a>
+  </div>
+  <div class="image-details-details">
+    <div class="image-details-title">
+      {{image?.title}}:
+    </div>
+    <div class="image-details-details-text">
+      <p>{{image?.description}}</p>
+      <p>{{image?.location}}</p>
+      <p>{{image?.captureDate}}</p>
+      <p>{{image?.category1}} {{image?.category2}}</p>
+    </div>
+  </div>
+</div>
